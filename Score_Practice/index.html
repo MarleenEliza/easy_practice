@@ -7,7 +7,6 @@
     <title>Ping Pong</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css">
     </script>
 </head>
 
@@ -29,23 +28,25 @@
                         <p class="subtitle">Use the buttons below to keep score</p>
                         <strong class="has-text-centered">Playing To
                             <div class="select">
-                                <select>
-                                    <option value="1">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                    <option value="">4</option>
+                                <select id="selector">
+                                    <option value= 1>1</option>
+                                    <option value= 2>2</option>
+                                    <option selected="selected" value= 3>3</option>
+                                    <option value= 4>4</option>
+                                    <option value= 5>5</option>
+                                    <option value= 6>6</option>
+                                    <option value= 7>7</option>
+                                    <option value= 8>8</option>
+                                    <option value= 9>9</option>
                                 </select>
                             </div>
                         </strong>
                     </div>
                 </div>
-                
-
-
-                <div class="buttons">
-                    <button id="p1-btn" class="button is-primary">+1 Player One</button>
-                    <button id="p2-btn" class="button is-info">+1 Player Two</button>
-                    <button id="reset-btn" class="button is-danger">Reset</button>
+                <div class="card-footer">
+                    <button id="p1-btn" class="button is-primary card-footer-item">+1 Player One</button>
+                    <button id="p2-btn" class="button is-info card-footer-item">+1 Player Two</button>
+                    <button id="reset-btn" class="button is-danger card-footer-item">Reset</button>
                 </div>
             </div>
 

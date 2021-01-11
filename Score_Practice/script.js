@@ -14,8 +14,12 @@ const p2 = {
 const resetBtn = document.getElementById("reset-btn");
 resetBtn.addEventListener("click", function () {reset()});
 
+const playSetter = document.getElementById("selector");
+playSetter.addEventListener("change", function () {setPlays()});
+
 p1.btn.addEventListener("click", function () { updateScore(p1,p2) });
 p2.btn.addEventListener("click", function () { updateScore(p2,p1) });
+
 
 
 let isGameOver = false;
@@ -41,6 +45,10 @@ function endGame(player, opponent) {
     opponent.display.classList.add('has-text-danger');
     player.btn.disabled = true;
     opponent.btn.disabled = true;
+}
+
+function setPlays(){
+    winningScore = parseInt(playSetter.value);
 }
 
 function reset() {
